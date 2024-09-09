@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="logo-wrapper">
+                <div class="logo-circle">
+                    <img class="logo" src="/images/logo.jpg" />
+                </div>
+                <div class="overflow-hidden">
+                    <div class="logo-text">
+                        <h2>REGIONS</h2>
+                        <h3>Mortgage</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="enroll-section">
+                <div class="overflow-hidden"><span class="enroll-text">Are you a new customer?</span></div>
+
+                <!-- not the best practive -->
+                <button class="enroll-button" onmouseenter="showTooltip()" onmouseleave="hideTooltip()">Enroll
+                    Now</button>
+
+                <div class="tooltip">
+                    <h3>Enroll now to:</h3>
+                    <ul>
+                        <div class="triangle"></div>
+                        <li>
+                            <div class="checkbox"></div>Access your loans online
+                        </li>
+                        <li>
+                            <div class="checkbox"></div>Pay your mortgage online
+                        </li>
+                        <li>
+                            <div class="checkbox"></div>View your mortgage statements
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="overflow-hidden">
+            <form class="form-main" onsubmit="formHandler(event)">
+                <h1>Welcome Back</h1>
+                <p>Sign in to your Regions MyMortgage account.</p>
+                <div class="input-container">
+                    <input type="text" required id="online-id" placeholder=" ">
+                    <label for="online-id">Online ID</label>
+                </div>
+                <div class="input-container">
+                    <input type="password" required id="password" placeholder=" ">
+                    <label for="password">Password</label>
+                    <p class="show-pass" onclick="showPass()">Show</p>
+                </div>
+                <div class="checkbox-container">
+                    <input type="checkbox" id="remember-me" class="custom-checkbox">
+                    <label for="remember-me" class="checkbox-label">
+                        <span class="checkbox-custom"></span>
+                        Remember me
+                    </label>
+                </div>
+                <button class="login-button overflow-hidden">
+                    <div>
+                        <span class="login-text">Login</span>
+                        <span class="loader"></span>
+                    </div>
+                </button>
+                <div class="forgot-links">
+                    <a href="#">Forgot Online ID?</a>
+                    <div class="dot"></div>
+                    <a href="#">Forgot Password?</a>
+                </div>
+            </form>
+        </div>
+        <div class="footer">
+            <div class="overflow-hidden">
+                <div class="footer-top"><span><img class="footer-icon" src="./images/footer-icon.png" alt="" srcset="">
+                        Equal Housing Lender </span> <span class="dot"></span> <span> Member
+                        FDIC</span></div>
+            </div>
+
+            <div class="overflow-hidden">
+                <div class="footer-bottom">
+                    <span>©2023 Regions Financial Corporation. All Rights Reserved.</span>
+                    <span class="region-span">1 (800) REGIONS</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="image-wrapper">
+        <div class="image-div">
+            <img src="./images/bg.png" class="bg-image" alt="">
+        </div>
+    </div>
+
+
+    <script src="app.js"></script>
+</body>
+
+</html>
