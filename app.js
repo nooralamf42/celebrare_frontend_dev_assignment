@@ -27,6 +27,7 @@ function hideTooltip(){
 
 function formHandler(event){
     event.preventDefault()
+    buttonElement.classList.add('animate-button')
     setTimeout(()=>{
         formElement.classList.add('reverse-1')
         footerTopElement.classList.add('reverse-2')
@@ -36,5 +37,5 @@ function formHandler(event){
         logoCircleElement.classList.add('reverse-5')
         imageWrapperElement.classList.add('reverse-6')
         logoElement.classList.add('reverse-7')
-    }, 1000)
+    }, 1500)
 }
